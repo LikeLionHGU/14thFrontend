@@ -1,25 +1,50 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- width: 100vw;
+#linkStyle {
+  text-decoration: none;
+  color: goldenrod;
+  
+}
+
+#mainLogo {
+  text-align: center;
+  margin:0;
+  padding: 15px;;
+  
+      font-family: "Lora", serif;
+      font-optical-sizing: auto;
+      font-weight: 100px;
+      font-style: normal;
+
+  background-color: black; 
+}
+
+body {
+
+  width: 100vw;
   height: 100vh;
 }
 
-#likelion-header {
+/*#likelion-header {
   /*
     '>' : 직접적인 자식 요소일 때만 스타일을 적용하고 싶을 때 사용
     만약 모든 하위 요소 중에서 #header_logo를 선택하고 싶다면 >를 생략
   */
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  border: 1px solid rgb(247, 196, 68);
+  border: 1px solid rgb(0, 0, 0);
   padding: 50px;
 
-  > #header_logo {
+  #header_logo {
     img {
       width: 100px;
     }
   }
-}
+}*/
 
 #likelion-banner {
   border: 1px solid blue;
