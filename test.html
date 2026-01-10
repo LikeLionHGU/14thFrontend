@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달 만들기 연습</title>
+
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>모달 테스트</h1>
+        <p>아래 버튼을 눌러보세요.</p>
+        <button id="open-btn" class="primary-btn">모달 열기</button>
+    </div>
+
+    <dialog id="modal">
+        <div class="modal-header">
+            <h2>🎉 환영합니다!</h2>
+        </div>
+        <div class="modal-body">
+            <p>이것이 바로 &lt;dialog&gt; 태그로 만든 모달입니다.</p>
+            <p>배경이 어두워지고 뒤쪽 클릭이 막혔죠?</p>
+        </div>
+        <div class="modal-footer">
+            <button id="close-btn" class="secondary-btn">닫기</button>
+        </div>
+    </dialog>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
