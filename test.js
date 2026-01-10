@@ -7,13 +7,13 @@ const closeBtn = document.getElementById('close-btn');
 openBtn.addEventListener('click', () => {
     // show()가 아니라 showModal()을 써야 배경이 어두워집니다.
     modal.showModal();
-    console.log("모달이 열렸습니다.");
+    console.log("모달이 열렸습니다!");
 });
 
 // 3. [닫기] 버튼을 눌렀을 때
 closeBtn.addEventListener('click', () => {
     modal.close();
-    console.log("모달이 닫혔습니다.");
+    console.log("모달이 닫혔습니다!");
 });
 
 // (선택사항) 모달 바깥 배경을 클릭했을 때 닫히게 하기
