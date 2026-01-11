@@ -1,18 +1,23 @@
 
-const modal=currentTarget;
 
 function openModal(event) {
-    const x = event.currentTarget;
-    const x1 = x.innerText;
-    const modal=document.getElementById(x1);
+
+    const div= event.currentTarget;
+    const modalId=div.innerText;
+    const modal= document.getElementById(modalId);
     modal.showModal();
+    // const x = event.currentTarget;
+    // const x1 = x.innerText;
+    // const modal=document.getElementById(x1);
+    // modal.showModal();
 }
 
-const closeBtn = document.getElementById('close-btn');
-closeBtn.addEventListener('click',closeModal());
+document.querySelectorAll('.close-btn').forEach(btn => {
+    btn.addEventListener('click', closeModal);
+});
 
 function closeModal(event){
-    modal=event.target;
+    const modal =event.target.closest('dialog');
     modal.close();
 }
 
