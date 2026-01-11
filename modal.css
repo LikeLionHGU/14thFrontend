@@ -42,12 +42,12 @@ dialog::backdrop {
 
 .modal-body {
     max-width: 1000px;
-    height: auto;
+    height: 400px;
     aspect-ratio: 5/3;
 
     position: relative;
     background-color: #000;
-    background-image: url('./src/black/jinsungkim-img.png');
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -58,12 +58,13 @@ dialog::backdrop {
 }
 
 .modal-big-text {
-    font-size: 8vw;
+    font-size: clamp(32px, 8vw, 60px);
+    
     color: #f4df96;
 }
 
 .modal-sub-text {
-    font-size: 4vw;
+    font-size: clamp(10px, 3vw, 30px);
     color: white;
 }
 
@@ -93,4 +94,20 @@ dialog::backdrop {
     height: 300px;
     background-color: rgb(110, 110, 155);
     text-align: center;
+}
+
+#jinsungkim .modal-body{
+    background-image: url('./src/background/jinsungkim-img.png');
+}
+#cheongmyeong .modal-body{
+    background-image: url('./src/background/cheongmyeong-img.png');
+}
+#sehee .modal-body{
+    background-image: url('./src/background/sehee-img.png');
+}
+#parkhyeongchan .modal-body{
+    background-image: url('./src/background/parkhyeongchan-img.png');
+}
+#minwook .modal-body{
+    background-image: url('./src/background/minwook-img.png');
 }
