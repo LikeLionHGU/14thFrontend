@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달 만들기 연습</title>
+
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <div onclick="openModal(event)" class="profile-box">
+        jinsungkim
+    </div>
+    <div onclick="openModal(event)" class="profile-box">
+        cheongmyeong
+    </div>
+    <div class="container">
+        <h1>모달 테스트</h1>
+        <p>아래 버튼을 눌러보세요.</p>
+        <button id="open-btn" class="primary-btn">모달 열기</button>
+    </div>
+
+    <dialog id="jinsungkim">
+        <div class="modal-body">
+            <span class="modal-big-text">김 진 성</span><br>
+            <span class="modal-sub-text">멋사의 낭군님</span><br>
+            <ul>
+                <li>생년월일</li>
+                <li>학번</li>
+                <li>전공</li>
+                <li>취미</li>
+                <li></li>
+            </ul>
+            <img class="modal-icon" src="./src/github-icon.png" alt="github-icon">
+            <img class="modal-icon" src="./src/instagram-icon.png" alt="instagram-icon">
+
+
+
+            <button id="close-btn" class="X-btn">X</button>
+        </div>
+
+    </dialog>
+
+    <dialog id="cheongmyeong">
+        <div class="modal-body">
+            <span class="modal-big-text">임 청 명</span><br>
+            <span class="modal-sub-text">인간 유전자의 변이</span><br>
+            <ul>
+                <li>생년월일</li>
+                <li>학번</li>
+                <li>전공</li>
+                <li>취미</li>
+                <li></li>
+            </ul>
+            <img class="modal-icon" src="./src/github-icon.png" alt="github-icon">
+            <img class="modal-icon" src="./src/instagram-icon.png" alt="instagram-icon">
+
+
+
+            <button id="close-btn" class="X-btn">X</button>
+        </div>
+
+    </dialog>
+    <script src="modal.js"></script>
+</body>
+
+</html>
