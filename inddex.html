@@ -1,30 +1,78 @@
 <!DOCTYPE html> <!-- 브랜치 설명 테스트 -->
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>멋사 14기 프론트엔드</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-      </style>
-  </head>
-  <body>
-     <!-- Header 영역 -->
-    <div id="likelion-header">
-      <div id="mainLogo">
-        <h1><a id="linkStyle" href="메인페이지링크">Frontend Awards</a></h1>
-      </div>
-    </div>
 
-        <!-- Grid 영역 -->
-    <div id="likelion-grid">
-      <div class="member template">
-        <div class="info-name"></div>
-        <a class="link-a"></a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>멋사 14기 프론트엔드</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<body>
+  <!-- Header 영역 -->
+  <div class="likelion-header">
+
+    <a href="메인페이지링크" class="header-link">
+      <img src="./assets/img/logoimg.png" class="logoimg" />
+      <span id="mainLogo">Frontend Awards</span>
+    </a>
+
+    <button id="btnPlay">재생 버튼</button>
+    <button id="btnPause">일시정지 버튼</button>
+    <button id="btnStop">정지 버튼</button>
+    <button class="btn btn-primary">
+      Bootstrap 버튼s
+    </button>
+
+  </div>
+
+  <!-- Grid 영역 -->
+  <div id="likelion-grid">
+    <div class="member template">
+      <div class="info-name"></div>
+      <a class="link-a"></a>
     </div>
-    <!-- Footer 영역 -->
-    <div id="footer"></div>
-  </body>
+  </div>
+  <!-- Footer 영역 -->
+  <div id="footer"></div>
+</body>
+
+<script>
+  // Audio 객체 설정
+  const myAudio = new Audio();
+  myAudio.src = "./assets/audio/audio.mp3";
+
+  // 오디오 재생: 크롬브라우저에서 작동 안함
+  myAudio.play();
+
+  // 버튼 취득
+  const btnPlay = document.getElementById("btnPlay");
+  const btnPause = document.getElementById("btnPause");
+  const btnStop = document.getElementById("btnStop");
+
+  // 재생 버튼
+  btnPlay.onclick = function () {
+    myAudio.play();
+  }
+
+  // 일시정지 버튼
+  btnPause.onclick = function () {
+    myAudio.pause();
+  }
+
+  // 정지 버튼
+  btnStop.onclick = function () {
+    myAudio.pause();
+    myAudio.currentTime = 0; // 재생시간을 처음으로 설정
+  }
+
+</script>
+
 </html>
