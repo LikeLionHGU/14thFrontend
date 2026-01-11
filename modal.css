@@ -1,0 +1,96 @@
+body {
+    font-family: 'Suit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+.X-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    color: #f4df96;
+    border-color: #f4df96;
+    border-style: solid;
+    border-radius: 100%;
+    font-size: 10px;
+    text-align: center;
+}
+
+dialog {
+    background-color: #000;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body {
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 5/3;
+
+    position: relative;
+    background-color: #000;
+    background-image: url('./src/black/jinsungkim-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.modal-content {
+    padding: 70px;
+}
+
+.modal-big-text {
+    font-size: 8vw;
+    color: #f4df96;
+}
+
+.modal-sub-text {
+    font-size: 4vw;
+    color: white;
+}
+
+.modal-p {
+    color: white;
+    font-size: 3vw;
+}
+
+.modal-body ul {
+    list-style-type: none;
+    color: white;
+    padding-left: 0;
+}
+
+.modal-img {
+    width: 300px;
+    height: 100px;
+}
+
+.modal-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-box {
+    width: 150px;
+    height: 300px;
+    background-color: rgb(110, 110, 155);
+    text-align: center;
+}
