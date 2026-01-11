@@ -1,0 +1,85 @@
+body {
+    font-family: 'Suit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+.container {
+    text-align: center;
+}
+.X-btn {
+    width:50px;
+    height:50px;
+    position:absolute;
+    right:20px;
+    top:20px;
+    background-color:transparent;
+    color: #f4df96;
+    border-color:#f4df96;
+    border-style:solid;
+    border-radius: 100%;
+    font-size:10px;
+    text-align: center;
+}
+dialog {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    overflow: hidden; /* dialog를 나갈경우 빠져나가지 않게 나간것들은 안보이게 처리 */
+}
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body{
+    width:1040px;
+    height:600px;
+    padding:70px;
+    position:relative;
+                
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    row-gap:50px;
+}
+.modal-big-text{
+    font-size:80px;
+    color:#f4df96;
+}
+.modal-sub-text{
+    font-size:40px;
+    color:white;
+}
+.modal-p{
+    color:white;
+}
+.modal-body ul{
+    list-style-type: none;
+    color:white;
+    padding-left: 0;
+}
+.modal-img{
+    width:300px;
+    height:100px;
+}
+.modal-icon{
+    width:30px;
+    height:30px;
+}
+
+.profile-box{
+    width:150px;
+    height:300px;
+    background-color: rgb(110, 110, 155);
+    text-align: center;
+}
+#jinsungkim .modal-body{
+    background-image: url("./src/jinsungkim-img.png");
+}
+#cheongmyeong .modal-body{
+    background-image: url("./src/cheongmyeong-img.png");
+}
