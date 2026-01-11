@@ -1,30 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#linkStyle {
+.likelion-header {
+  display: flex;
+  justify-content: center; /*수평중앙*/ 
+  /*수직중앙은 align-items*/
+  background-color: black;
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 5px double rgb(83, 7, 7);
+  font-family: "Lora", serif;
+}
+
+.header-link{
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: goldenrod;
-  
+}
+
+.logoimg {
+  display:block;
+  padding-top:10px;
+  height:100px;
+  object-fit:contain;
 }
 
 #mainLogo {
-  text-align: center;
-  margin:0;
-  padding: 15px;;
-  
-      font-family: "Lora", serif;
-      font-optical-sizing: auto;
-      font-weight: 100px;
-      font-style: normal;
+  text-decoration: none;
+  color: goldenrod;
+  text-shadow: 2px 2px rgb(121, 93, 26);
 
-  background-color: black; 
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-style: normal;
+    font-size: 40px;
 }
 
-body {
 
+body {
   width: 100vw;
   height: 100vh;
 }
@@ -34,7 +49,7 @@ body {
     '>' : 직접적인 자식 요소일 때만 스타일을 적용하고 싶을 때 사용
     만약 모든 하위 요소 중에서 #header_logo를 선택하고 싶다면 >를 생략
   */
-  /*display: flex;
+/*display: flex;
   flex-direction: column;
   border: 1px solid rgb(0, 0, 0);
   padding: 50px;
