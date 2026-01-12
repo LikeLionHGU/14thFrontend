@@ -1,6 +1,6 @@
 body{
 
- width: 100vw;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -81,7 +81,9 @@ body{
 .footer-text {
   color: #d5a151;
   font-size: 14px;
+
   font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 /* SNS 아이콘 */
