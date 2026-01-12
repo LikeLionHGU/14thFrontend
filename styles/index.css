@@ -39,8 +39,7 @@ transition: transform 0.3s ease-out;
 #mainLogo {
   text-decoration: none;
   color: rgb(213, 161, 81);
-  text-shadow: 3px 3px rgb(149, 1, 2);
-
+  text-shadow:-1px -1px 0 #ffeebb,3px 3px 0 rgb(149, 1, 2);/*사이에 흰색 한줄 추가*/
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
