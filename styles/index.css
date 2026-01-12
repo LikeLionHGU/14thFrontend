@@ -1,6 +1,6 @@
 body{
 
- width: 100vw;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -47,12 +47,18 @@ body{
 }
 
 #footer {
-  width: 100%;
   padding: 40px 60px;
   background-color: #000000;
 
   display: flex;
   align-items: center;
+
+  border-top: #d4af37 1px solid;
+
+}
+
+.footer-left{
+  width:290px;
 }
 
 /* 트로피 */
@@ -69,6 +75,11 @@ body{
 .footer-text {
   color: #d4af37;
   font-size: 14px;
+
+  a{
+    color: #d4af37;
+    text-decoration: none;
+  }
 }
 
 /* SNS 아이콘 */
