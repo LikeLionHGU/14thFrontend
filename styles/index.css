@@ -32,7 +32,10 @@
   height: 120px;
   object-fit: contain;
 }
-
+.go{
+transform: translateY(-13px);
+transition: transform 0.3s ease-out;
+}
 #mainLogo {
   text-decoration: none;
   color: rgb(213, 161, 81);

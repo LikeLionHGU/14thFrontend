@@ -23,7 +23,9 @@
   <!-- Header 영역 -->
   <div class="likelion-header"> <!--div자동줄바꿈/span내용만큼만-->
 
-        <img src="./assets/img/logoimg.png" class="logoimg" />
+        <img src="./assets/img/logoimg.png" class="logoimg" onclick="move()" />
+
+
         <a href="메인페이지링크" class="header-link">
           <!--<img src="./assets/img/logoimg.png" class="logoimg" />-->
           <span id="mainLogo">Frontend Awards</span>
@@ -98,6 +100,14 @@
     myAudio.currentTime = 0; // 재생시간을 처음으로 설정
   }
 
+
+  function move() {//눌렀을 시 logo 이미지에 go에 지정된 애니메이션 효과(점프)
+  const logo = document.querySelector(".logoimg");
+//위
+  logo.classList.add("go");
+//아래(0.5초있다 리무브)
+  setTimeout (function(){logo.classList.remove("go");},500); 
+}
 </script>
 
 </html>
