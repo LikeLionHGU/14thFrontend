@@ -46,17 +46,19 @@ body{
   }
 }
 
+.footer-left {
+  width : 290px;
+}
+
 #footer {
   padding: 40px 60px;
   background-color: #000000;
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   border-top: #d5a151 1px solid;
-}
-.footer-left {
-  width: 290px;
 }
 
 /* 트로피 */
