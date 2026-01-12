@@ -6,55 +6,75 @@
 
 .likelion-header {
   display: flex;
-  align-items: baseline;
   justify-content: center;
-  background-color: rgb(5,5,5);
+  background-color: rgb(5, 5, 5);
   border-radius: 0px 0px 20px 20px;
   border-bottom: 5px groove rgb(149, 1, 2);
   font-family: "Lora", serif;
 }
 
-.header-link{
+.header-link {
   display: flex;
-  align-items: center; /*수직*/
-  justify-content: center; /*수평*/
-  text-decoration: none; /*링크 파란옵션 삭제*/
+  align-items: center;
+  /*수직*/
+  justify-content: center;
+  /*수평*/
+  text-decoration: none;
+  /*링크 파란옵션 삭제*/
 }
 
 .logoimg {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 15px;
-  height:110px;
+  padding-right: 15px;
+  height: 120px;
   object-fit: contain;
 }
 
 #mainLogo {
   text-decoration: none;
-  color: rgb(213,161,81);
-  text-shadow: 2px 2px rgb(149, 1, 2);
+  color: rgb(213, 161, 81);
+  text-shadow: 3px 3px rgb(149, 1, 2);
 
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 50px;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 50px;
 }
 
 
-#header-music{
+#header-music {
   display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
-button { /*버튼 기본설정 삭제*/
+button {
+  /*버튼 기본설정 삭제*/
   border: 0;
   outline: none;
-  background: none;
+  background-color: transparent;
   padding: 0;
   cursor: pointer;
 }
 
-button:hover{
+
+button:hover {
   transform: scale(1.5);
+}
+
+#btnPlay svg:hover {
+  fill:rgb(149, 1, 2); 
+}
+
+#btnPause svg:hover {
+  fill: rgb(149, 1, 2);
+}
+
+#btnStop svg:hover {
+  fill: rgb(149, 1, 2);
 }
 
 body {
