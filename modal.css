@@ -7,79 +7,117 @@ body {
     margin: 0;
     background-color: #ffffff;
 }
+
 .container {
     text-align: center;
 }
+
 .X-btn {
-    width:50px;
-    height:50px;
-    position:absolute;
-    right:20px;
-    top:20px;
-    background-color:transparent;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
     color: #f4df96;
-    border-color:#f4df96;
-    border-style:solid;
+    border-color: #f4df96;
+    border-style: solid;
     border-radius: 100%;
-    font-size:10px;
+    font-size: 10px;
     text-align: center;
 }
+
 dialog {
+    background-color: #000;
     border: none;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     padding: 0;
-    overflow: hidden; /* dialog를 나갈경우 빠져나가지 않게 나간것들은 안보이게 처리 */
+    overflow: hidden;
 }
+
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-body{
-    width:1040px;
-    height:600px;
-    padding:70px;
-    position:relative;
-                
+.modal-body {
+    max-width: 1000px;
+    height: 400px;
+    aspect-ratio: 5/3;
+
+    position: relative;
+    background-color: #000;
+    
     background-repeat: no-repeat;
-    background-size:cover;
     background-position: center;
-    row-gap:50px;
-}
-.modal-big-text{
-    font-size:80px;
-    color:#f4df96;
-}
-.modal-sub-text{
-    font-size:40px;
-    color:white;
-}
-.modal-p{
-    color:white;
-}
-.modal-body ul{
-    list-style-type: none;
-    color:white;
-    padding-left: 0;
-}
-.modal-img{
-    width:300px;
-    height:100px;
-}
-.modal-icon{
-    width:30px;
-    height:30px;
+    background-size: contain;
 }
 
-.profile-box{
-    width:150px;
-    height:300px;
+.modal-content {
+    padding: 70px;
+}
+
+.modal-big-text {
+    font-size: clamp(32px, 8vw, 60px);
+    
+    color: #f4df96;
+}
+
+.modal-sub-text {
+    font-size: clamp(10px, 3vw, 30px);
+    color: white;
+}
+
+.modal-p {
+    color: white;
+    font-size: 3vw;
+}
+
+.modal-body ul {
+    list-style-type: none;
+    color: white;
+    padding-left: 0;
+}
+
+.modal-img {
+    width: 300px;
+    height: 100px;
+}
+
+.modal-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-box {
+    width: 150px;
+    height: 300px;
     background-color: rgb(110, 110, 155);
     text-align: center;
 }
+.div-icon{
+    display:flex;
+    gap:20px;
+}
+
 #jinsungkim .modal-body{
-    background-image: url("./src/jinsungkim-img.png");
+    background-image: url('./src/background/jinsungkim-img.png');
 }
 #cheongmyeong .modal-body{
-    background-image: url("./src/cheongmyeong-img.png");
+    background-image: url('./src/background/cheongmyeong-img.png');
+}
+#sehee .modal-body{
+    background-image: url('./src/background/sehee-img.png');
+}
+#parkhyeongchan .modal-body{
+    background-image: url('./src/background/parkhyeongchan-img.png');
+}
+#minwook .modal-body{
+    background-image: url('./src/background/minwook-img.png');
+}
+#hanna .modal-body{
+    background-image: url('./src/background/hanna-img.png');
+}
+#yuwon .modal-body{
+    background-image: url('./src/background/yuwon-img.png');
 }
