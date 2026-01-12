@@ -47,12 +47,16 @@ body{
 }
 
 #footer {
-  width: 100%;
   padding: 40px 60px;
   background-color: #000000;
 
   display: flex;
   align-items: center;
+
+  border-top: #d5a151 1px solid;
+}
+.footer-left {
+  width: 290px;
 }
 
 /* 트로피 */
@@ -62,13 +66,20 @@ body{
 
 /* 소개 문구 */
 .footer-center {
-  flex: 1; /*가운데 소개문구가 트로피,아이콘 공간을 제외한 나머지 공간을 다 차지하도록*/
+   flex: 1;/*가운데 소개문구가 트로피,아이콘 공간을 제외한 나머지 공간을 다 차지하도록*/
   text-align: center;
+
+  a{
+    text-decoration: none;
+    color: #d5a151;
+     transition: transform 0.2s ease;/*마우스 가져다 대면 부드럽게 hover*/
+  }
 }
 
 .footer-text {
-  color: #d4af37;
+  color: #d5a151;
   font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* SNS 아이콘 */
@@ -80,7 +91,6 @@ body{
 .footer-right img {
   width: 50px;
   height: 50px;
-  transition: transform 0.2s ease;/*마우스 가져다 대면 부드럽게 hover*/
 }
 
 /* hover 효과 */
