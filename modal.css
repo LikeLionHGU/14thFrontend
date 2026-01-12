@@ -95,6 +95,10 @@ dialog::backdrop {
     background-color: rgb(110, 110, 155);
     text-align: center;
 }
+.div-icon{
+    display:flex;
+    gap:20px;
+}
 
 #jinsungkim .modal-body{
     background-image: url('./src/background/jinsungkim-img.png');
@@ -110,4 +114,10 @@ dialog::backdrop {
 }
 #minwook .modal-body{
     background-image: url('./src/background/minwook-img.png');
+}
+#hanna .modal-body{
+    background-image: url('./src/background/hanna-img.png');
+}
+#yuwon .modal-body{
+    background-image: url('./src/background/yuwon-img.png');
 }

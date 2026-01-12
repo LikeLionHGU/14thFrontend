@@ -27,6 +27,14 @@
         parkhyeongchan
     </div>
 
+    <div onclick="openModal(event)" class="profile-box">
+        hanna
+    </div>
+
+    <div onclick="openModal(event)" class="profile-box">
+        yuwon
+    </div>
+
     <div class="container">
         <h1>모달 테스트</h1>
         <p>아래 버튼을 눌러보세요.</p>
@@ -37,7 +45,7 @@
         <div class="modal-body">
             <div class="modal-content">
                 <span class="modal-big-text">김 진 성</span><br>
-                <span class="modal-sub-text">멋사의 낭군님</span><br>
+                <span class="modal-sub-text">백일의 낭군님</span><br>
                 <ul>
                     <li>생년월일</li>
                     <li>학번</li>
@@ -45,10 +53,12 @@
                     <li>취미</li>
                     <li></li>
                 </ul>
-                <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
-                <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
-
-                <button class="X-btn close-btn">X</button>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+                <button class="X-btn">X</button>
             </div>
         </div>
     </dialog>
@@ -65,9 +75,12 @@
                     <li>취미</li>
                     <li></li>
                 </ul>
-                <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
-                <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
-                <button class="X-btn close-btn">X</button>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+                <button class="X-btn">X</button>
             </div>
         </div>
     </dialog>
@@ -84,9 +97,12 @@
                     <li>취미</li>
                     <li></li>
                 </ul>
-                <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
-                <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
-                <button class="X-btn close-btn">X</button>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+                <button class="X-btn">X</button>
             </div>
         </div>
     </dialog>
@@ -103,14 +119,17 @@
                     <li>취미</li>
                     <li></li>
                 </ul>
-                <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
-                <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
-                <button class="X-btn close-btn">X</button>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+                <button class="X-btn">X</button>
             </div>
         </div>
     </dialog>
 
-        <dialog id="parkhyeongchan">
+    <dialog id="parkhyeongchan">
         <div class="modal-body">
             <div class="modal-content">
                 <span class="modal-big-text">박 형 찬</span><br>
@@ -122,13 +141,62 @@
                     <li>취미</li>
                     <li></li>
                 </ul>
-                <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
-                <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
-                <button class="X-btn close-btn">X</button>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+
+                <button class="X-btn">X</button>
             </div>
         </div>
     </dialog>
 
+    <dialog id="hanna">
+        <div class="modal-body">
+            <div class="modal-content">
+                <span class="modal-big-text">나 한 나</span><br>
+                <span class="modal-sub-text">이상한변호사</span><br>
+                <ul>
+                    <li>생년월일</li>
+                    <li>학번</li>
+                    <li>전공</li>
+                    <li>취미</li>
+                    <li></li>
+                </ul>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+
+                <button class="X-btn">X</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="yuwon">
+        <div class="modal-body">
+            <div class="modal-content">
+                <span class="modal-big-text">윤유원</span><br>
+                <span class="modal-sub-text">유원인더트랩</span><br>
+                <ul>
+                    <li>생년월일</li>
+                    <li>학번</li>
+                    <li>전공</li>
+                    <li>취미</li>
+                    <li></li>
+                </ul>
+                <div class="div-icon">
+                    <img class="modal-icon" src="./src/icon/github-icon.png" alt="github-icon">
+                    <img class="modal-icon" src="./src/icon/instagram-icon.png" alt="instagram-icon">
+                    <img class="modal-icon" src="./src/icon/webpage-icon.png" alt="webpage-icon">
+                </div>
+
+                <button class="X-btn">X</button>
+            </div>
+        </div>
+    </dialog>
     <script src="modal.js"></script>
 </body>
 
