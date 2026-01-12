@@ -6,38 +6,56 @@
 
 .likelion-header {
   display: flex;
-  justify-content: center; /*수평중앙*/ 
-  /*수직중앙은 align-items*/
-  background-color: black;
-  border-radius: 0px 0px 10px 10px;
-  border-bottom: 5px double rgb(83, 7, 7);
+  align-items: baseline;
+  justify-content: center;
+  background-color: rgb(5,5,5);
+  border-radius: 0px 0px 20px 20px;
+  border-bottom: 5px groove rgb(149, 1, 2);
   font-family: "Lora", serif;
 }
 
 .header-link{
   display: flex;
-  align-items: center;
-  text-decoration: none;
+  align-items: center; /*수직*/
+  justify-content: center; /*수평*/
+  text-decoration: none; /*링크 파란옵션 삭제*/
 }
 
 .logoimg {
-  display:block;
-  padding-top:10px;
-  height:100px;
-  object-fit:contain;
+  display: block;
+  padding-top: 15px;
+  height:110px;
+  object-fit: contain;
 }
 
 #mainLogo {
   text-decoration: none;
-  color: goldenrod;
-  text-shadow: 2px 2px rgb(121, 93, 26);
+  color: rgb(213,161,81);
+  text-shadow: 2px 2px rgb(149, 1, 2);
 
     font-optical-sizing: auto;
-    font-weight:normal;
+    font-weight: normal;
     font-style: normal;
-    font-size: 40px;
+    font-size: 50px;
 }
 
+
+#header-music{
+  display: flex;
+  justify-content: flex-end;
+}
+
+button { /*버튼 기본설정 삭제*/
+  border: 0;
+  outline: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.5);
+}
 
 body {
   width: 100vw;
