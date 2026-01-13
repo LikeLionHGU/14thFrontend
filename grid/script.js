@@ -36,6 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
             el: ".swiper-pagination",
             type: 'bullets',
             clickable: true,
-        },
+        }
     });
+    const flash = document.getElementById("flash");
+
+    function randomFlash() {
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+
+        flash.style.left = x + "px";
+        flash.style.top = y + "px";
+
+        flash.classList.remove("fade");
+        void flash.offsetWidth;
+        flash.classList.add("fade");
+    }
+
+    function loop() {
+        randomFlash();
+        const delay = 500 + Math.random() * 1500;
+        setTimeout(loop, delay);
+    }
+
+    loop();
 });
