@@ -74,11 +74,19 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
     color: #d5a151;
-    
+
 }
-.swiper-button-prev::after,
+
+.swiper-button-prev::after{
+    content: '<';
+}
+
 .swiper-button-next::after {
-  content: '';
+    content: '>';
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
 }
 
 .swiper-pagination-bullet {
@@ -96,4 +104,31 @@ body {
 
 .flash {
     position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.flash.fade {
+    animation: flash 0.8s ease-out;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
 }
