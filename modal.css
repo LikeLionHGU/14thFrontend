@@ -121,3 +121,6 @@ dialog::backdrop {
 #yuwon .modal-body{
     background-image: url('./src/background/yuwon-img.png');
 }
+#taeyoun .modal-body{
+    background-image: url('./src/background/taeyoun-img.png');
+}
