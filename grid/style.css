@@ -93,9 +93,7 @@ body {
     content: '>';
 }
 
-.swiper-button-prev {
-  transform: rotate(180deg);
-}
+
 
 .swiper-pagination-bullet {
     width: 6px;
