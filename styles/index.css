@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   background-color: rgb(5, 5, 5);
-  border-bottom: 5px groove rgb(149, 1, 2);
+  border-bottom: #d5a151 1px solid;
   font-family: "Lora", serif;
 }
 
@@ -37,10 +37,10 @@ transition: transform 0.3s ease-out;
 }
 #mainLogo {
   text-decoration: none;
-  color: rgb(213, 161, 81);
+  color: #d5a151;
   text-shadow:-1px -1px 0 #ffeebb,3px 3px 0 rgb(149, 1, 2);/*사이에 흰색 한줄 추가*/
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-size: 50px;
 }
@@ -50,6 +50,7 @@ transition: transform 0.3s ease-out;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  padding-bottom: 10px;
 }
 
 button {
@@ -67,15 +68,15 @@ button:hover {
 }
 
 #btnPlay svg:hover {
-  fill:rgb(149, 1, 2); 
+  fill:rgb(213, 161, 81); 
 }
 
 #btnPause svg:hover {
-  fill: rgb(149, 1, 2);
+  fill: rgb(213, 161, 81);
 }
 
 #btnStop svg:hover {
-  fill: rgb(149, 1, 2);
+  fill: rgb(213, 161, 81);
 }
 
 body {
