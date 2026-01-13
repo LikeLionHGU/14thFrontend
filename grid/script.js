@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         grabCursor: true,
         spaceBetween: 100,
         effect: "coverflow",
-        watchSlidesProgress: true,
+        watchSlidesProgress: false,
 
         mousewheel: {
             forceToAxis: true,
