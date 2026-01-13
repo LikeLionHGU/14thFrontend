@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   background-color: rgb(5, 5, 5);
-  border-radius: 0px 0px 20px 20px;
   border-bottom: 5px groove rgb(149, 1, 2);
   font-family: "Lora", serif;
 }
@@ -126,31 +125,28 @@ body {
   }
 }
 
-.footer-left {
-  width : 290px;
-}
 
 #footer {
   padding: 40px 60px;
   background-color: #000000;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
 
   border-top: #d5a151 1px solid;
 }
 
-/* 트로피 */
-.footer-left img {
-  width: 100px;
-}
 
 /* 소개 문구 */
 .footer-center {
-   flex: 1;/*가운데 소개문구가 트로피,아이콘 공간을 제외한 나머지 공간을 다 차지하도록*/
+  grid-column: 2;
+
   text-align: center;
 
+  color: #d5a151;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  
   a{
     text-decoration: none;
     color: #d5a151;
@@ -158,18 +154,14 @@ body {
   }
 }
 
-.footer-text {
-  color: #d5a151;
-  font-size: 14px;
-
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
 /* SNS 아이콘 */
 .footer-right {
-  display: flex;
+  grid-column: 3;
   gap: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 .footer-right img {
