@@ -59,16 +59,18 @@ dialog::backdrop {
 
 .modal-big-text {
     font-size: clamp(32px, 8vw, 60px);
-    
+    font-family: 'Nanum Myeongjo';
     color: #f4df96;
 }
 
 .modal-sub-text {
     font-size: clamp(10px, 3vw, 30px);
+    font-family: 'Nanum Myeongjo';
     color: white;
 }
 
 .modal-p {
+    font-family: 'Nanum Myeongjo';
     color: white;
     font-size: 3vw;
 }
@@ -78,7 +80,9 @@ dialog::backdrop {
     color: white;
     padding-left: 0;
 }
-
+.modal-body li{
+    font-family: 'Nanum Myeongjo';
+}
 .modal-img {
     width: 300px;
     height: 100px;
