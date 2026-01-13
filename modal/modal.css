@@ -1,14 +1,8 @@
-body {
-    font-family: 'Suit', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #ffffff;
-}
 
 .container {
+    position:absolute;
+    left:50%;
+    top:50%;
     text-align: center;
 }
 
@@ -28,12 +22,16 @@ body {
 }
 
 dialog {
-    background-color: #000;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    padding: 0;
-    overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  overflow: hidden;
 }
 
 dialog::backdrop {
@@ -42,7 +40,7 @@ dialog::backdrop {
 
 .modal-body {
     max-width: 1000px;
-    height: 400px;
+    height: 500px;
     aspect-ratio: 5/3;
 
     position: relative;
@@ -102,29 +100,4 @@ dialog::backdrop {
 .div-icon{
     display:flex;
     gap:20px;
-}
-
-#jinsungkim .modal-body{
-    background-image: url('./src/background/jinsungkim-img.png');
-}
-#cheongmyeong .modal-body{
-    background-image: url('./src/background/cheongmyeong-img.png');
-}
-#sehee .modal-body{
-    background-image: url('./src/background/sehee-img.png');
-}
-#parkhyeongchan .modal-body{
-    background-image: url('./src/background/parkhyeongchan-img.png');
-}
-#minwook .modal-body{
-    background-image: url('./src/background/minwook-img.png');
-}
-#hanna .modal-body{
-    background-image: url('./src/background/hanna-img.png');
-}
-#yuwon .modal-body{
-    background-image: url('./src/background/yuwon-img.png');
-}
-#taeyoun .modal-body{
-    background-image: url('./src/background/taeyoun-img.png');
 }

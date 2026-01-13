@@ -4,6 +4,14 @@ body {
     margin: 0;
     overflow: hidden;
 } */
+.sub-body {
+  display: block;          
+  justify-content: initial;
+  align-items: initial;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
 
 .frame {
     width: 100vw;
