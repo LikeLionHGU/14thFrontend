@@ -1,9 +1,9 @@
-html,
+/* html,
 body {
     height: 100%;
     margin: 0;
     overflow: hidden;
-}
+} */
 
 .frame {
     width: 100vw;
@@ -39,7 +39,7 @@ body {
     align-items: center;
 }
 
-.card {
+.car {
     width: 100%;
     height: 100%;
     background: white;
@@ -54,18 +54,18 @@ body {
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.swiper-slide-active .card {
+.swiper-slide-active .car {
     transform: scale(1);
     opacity: 1;
     z-index: 3;
 }
 
-.swiper-slide-active .card:hover {
+.swiper-slide-active .car:hover {
     transform: scale(1.1);
 }
 
-.swiper-slide-prev .card,
-.swiper-slide-next .card {
+.swiper-slide-prev .car,
+.swiper-slide-next .car {
     transform: scale(0.85);
     opacity: 0.6;
     z-index: 2;
@@ -74,6 +74,11 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
     color: #d5a151;
+    
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
 }
 
 .swiper-pagination-bullet {
