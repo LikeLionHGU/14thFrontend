@@ -2,9 +2,9 @@
 
 function openModal(event) {
 
-    const div= event.currentTarget;
-    const modalId=div.innerText;
-    const modal= document.getElementById(modalId);
+    const modalName= event.currentTarget.className;
+    console.log(modalName);
+    const modal= document.getElementById(modalName);
     modal.showModal();
 }
 
