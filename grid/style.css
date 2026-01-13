@@ -1,0 +1,99 @@
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+} */
+
+.frame {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 320px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 3px solid #d5a151;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.7);
+    opacity: 0.3;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.swiper-slide-active .car {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+.swiper-slide-active .car:hover {
+    transform: scale(1.1);
+}
+
+.swiper-slide-prev .car,
+.swiper-slide-next .car {
+    transform: scale(0.85);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #d5a151;
+    
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #b2b2b2;
+    opacity: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e6e6e6;
+    transform: scale(1.3);
+}
+
+.flash {
+    position: absolute;
+}
